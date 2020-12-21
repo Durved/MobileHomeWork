@@ -71,13 +71,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:autofillHints="password"
         android:ems="10"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:labelFor="@id/PasswordLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EmailTextView"
-        android:autofillHints="password" />
+        app:layout_constraintTop_toBottomOf="@+id/EmailTextView" />
 
     <TextView
         android:id="@+id/PasswordLabel"
@@ -94,13 +94,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:autofillHints="password"
         android:ems="10"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:labelFor="@id/PasswordLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordTextView"
-        android:autofillHints="password" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTextView" />
 
     <TextView
         android:id="@+id/ConfirmLabel"

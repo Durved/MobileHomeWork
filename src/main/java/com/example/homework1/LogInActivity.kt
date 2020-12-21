@@ -2,6 +2,7 @@ package com.example.homework1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -15,10 +16,9 @@ class LogInActivity : AppCompatActivity() {
             if (EmailTextView.text.isBlank() ||
                     NameTextView.text.isBlank() ||
                     PasswordTextView.text.isBlank() ||
-                    ConfirmTextView.text.isBlank()) {
-
-                Toast.makeText(this@LogInActivity, "Заполните все поля", Toast.LENGTH_SHORT)
-
+                    ConfirmTextView.text.isBlank())
+            {
+                Toast.makeText(this@LogInActivity, "Заполните все поля", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -31,12 +31,12 @@ class LogInActivity : AppCompatActivity() {
 
             if (PasswordTextView.text != ConfirmTextView.text)
             {
-                Toast.makeText(this@LogInActivity, "Пароли не совпадают", Toast.LENGTH_SHORT)
-
+                Toast.makeText(this@LogInActivity, "Пароли не совпадают", Toast.LENGTH_SHORT).show()
+                
                 return@setOnClickListener
             }
 
-            Toast.makeText(this@LogInActivity, "Всё корректно", Toast.LENGTH_SHORT)
+            Toast.makeText(this@LogInActivity, "Всё корректно", Toast.LENGTH_SHORT).show()
         }
     }
 }
