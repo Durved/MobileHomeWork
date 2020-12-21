@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HomeWork 1</string>
+    <string name="to_activity_1">To Activity 1</string>
+    <string name="to_activity_2">To Activity 2</string>
+    <string name="to_activity_3">To Activity 3</string>
+    <string name="to_activity_4">To Activity 4</string>
+</resources>
