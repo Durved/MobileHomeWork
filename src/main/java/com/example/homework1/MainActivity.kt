@@ -10,12 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val toActivity1Intent = Intent(this@MainActivity, Activity1::class.java)
+        val toLogInIntent = Intent(this@MainActivity, LogInActivity::class.java)
         val toActivity2Intent = Intent(this@MainActivity, Activity2::class.java)
         val toActivity3Intent = Intent(this@MainActivity, Activity3::class.java)
         val toActivity4Intent = Intent(this@MainActivity, Activity4::class.java)
 
-        toActivity1Button.setOnClickListener { startActivity(toActivity1Intent) }
+        toActivity1Button.setOnClickListener { startActivity(toLogInIntent) }
         toActivity2Button.setOnClickListener { startActivity(toActivity2Intent) }
         toActivity3Button.setOnClickListener { startActivity(toActivity3Intent) }
         toActivity4Button.setOnClickListener { startActivity(toActivity4Intent) }
