@@ -29,9 +29,10 @@ class LogInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (PasswordTextView.text != ConfirmTextView.text)
+            if (PasswordTextView.text.toString() != ConfirmTextView.text.toString())
             {
                 Toast.makeText(this@LogInActivity, "Пароли не совпадают", Toast.LENGTH_SHORT).show()
+
                 
                 return@setOnClickListener
             }
