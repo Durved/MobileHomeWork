@@ -1,5 +1,6 @@
 package com.example.homework1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -37,7 +38,9 @@ class LogInActivity : AppCompatActivity() {
             }
 
             Toast.makeText(this@LogInActivity, "Всё корректно", Toast.LENGTH_SHORT).show()
+            val toMainActivityIntent = Intent(this@LogInActivity, MainActivity::class.java)
 
+            startActivity(toMainActivityIntent)
         }
     }
 }
