@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val toActivity3Intent = Intent(this@MainActivity, Activity3::class.java)
         val toActivity4Intent = Intent(this@MainActivity, Activity4::class.java)
 
-        toActivity1Button.setOnClickListener { startActivity(toLogInIntent) }
+        toLogInActivityButton.setOnClickListener { startActivity(toLogInIntent) }
         toActivity2Button.setOnClickListener { startActivity(toActivity2Intent) }
         toActivity3Button.setOnClickListener { startActivity(toActivity3Intent) }
         toActivity4Button.setOnClickListener { startActivity(toActivity4Intent) }

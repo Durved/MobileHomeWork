@@ -37,6 +37,7 @@ class LogInActivity : AppCompatActivity() {
             }
 
             Toast.makeText(this@LogInActivity, "Всё корректно", Toast.LENGTH_SHORT).show()
+
         }
     }
 }
