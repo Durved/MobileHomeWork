@@ -33,7 +33,6 @@ class LogInActivity : AppCompatActivity() {
             {
                 Toast.makeText(this@LogInActivity, "Пароли не совпадают", Toast.LENGTH_SHORT).show()
 
-                
                 return@setOnClickListener
             }
 
